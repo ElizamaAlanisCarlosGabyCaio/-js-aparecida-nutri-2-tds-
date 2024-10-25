@@ -17,7 +17,6 @@ var imc = peso / (altura * altura);
 tdImc.textContent = imc.toFixed(2);
 
 
-
 var pesoEhValido = true;
 var alturaEhValida = true;
 
@@ -25,12 +24,14 @@ if (peso <= 0 || peso >= 1000) {
     console.log("Peso inválido!");
     pesoEhValido = false;
     tdImc.textContent = "Peso inválido!";
+    paciente.
 }
 
 if (altura <= 0 || altura >= 3.00){
     console.log("Altura inválida!");
     alturaEhValida = false;
     tdImc.textContent = "Altura inválida!";
+    paciente.style.backgroundColor = "orange"
 }
 
 if (alturaEhValida && pesoEhValido){
